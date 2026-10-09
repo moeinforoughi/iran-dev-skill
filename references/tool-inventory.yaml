@@ -1,0 +1,69 @@
+# Seed inventory transcribed from a user-provided Telegram roundup.
+# Versions are community-reported input and have NOT been independently checked.
+# `category` is a provisional research bucket, not a guarantee of what the app does.
+# Before recommending an entry, resolve the official repository, license, release, platform and security posture.
+source_context:
+  source_url: https://t.me/PersianGithubMirror
+  source_type: community_roundup_provided_by_user
+  observed_context_date: "2026-10"
+  version_status: user-supplied-unverified
+entries:
+  - {name: OblivionDesktop, reported_version: "v3.11.0", category: client-or-transport, repository: null, verification: unverified}
+  - {name: IRBox, reported_version: "v1.0.2", category: client-or-transport, repository: null, verification: unverified}
+  - {name: GNet, reported_version: "v1.0.4", category: client-or-transport, repository: null, verification: unverified}
+  - {name: finDns, reported_version: "v0.2.2.1", category: dns, repository: null, verification: unverified}
+  - {name: SlipstreamPlus, reported_version: "v1.1.20", category: tunnel-or-transport, repository: null, verification: unverified}
+  - {name: DnsTtXyz, reported_version: "v2.2.0", category: dns, repository: null, verification: unverified}
+  - {name: NoizDNS, reported_version: "v1.4.0", category: dns, repository: null, verification: unverified}
+  - {name: DnsTunEzpz, reported_version: "v0.4.0", category: dns-or-dns-tunnel, repository: null, verification: unverified}
+  - {name: SlipStreamGUI, reported_version: "v1.4.4", category: tunnel-or-transport, repository: null, verification: unverified}
+  - {name: Kabootar, reported_version: "v0.7.2", category: client-or-transport, repository: null, verification: unverified}
+  - {name: vayDNS, reported_version: "v0.2.8", category: dns, repository: null, verification: unverified}
+  - {name: slipGate, reported_version: "v1.6.4", category: tunnel-or-transport, repository: null, verification: unverified}
+  - {name: Termux, reported_version: "v0.119.0-beta.3", category: terminal-environment, repository: https://github.com/termux/termux-app, verification: repository-known-release-unverified}
+  - {name: SniSpoofing, reported_version: "v1.0", category: dpi-or-tls-diagnostic, repository: null, verification: unverified}
+  - {name: rangeScout, reported_version: "v0.1.2", category: scanner-or-diagnostic, repository: null, verification: unverified}
+  - {name: CFScanner, reported_version: "win-v1.4.96", category: scanner-or-diagnostic, repository: null, verification: unverified}
+  - {name: roundSync, reported_version: "v2.6.0", category: tunnel-or-transport, repository: null, verification: unverified}
+  - {name: Pigeon, reported_version: "v2.7.2", category: client-or-transport, repository: null, verification: unverified}
+  - {name: teleMirror, reported_version: "v3.2.0", category: mirror-or-relay, repository: null, verification: unverified}
+  - {name: Shade, reported_version: "v1.5.2", category: client-or-transport, repository: null, verification: unverified}
+  - {name: stormDNS, reported_version: "v2026.05.13.223445-87348df", category: dns-or-network-tool, repository: null, verification: unverified}
+  - {name: Zemzeme, reported_version: "v2.0.7", category: client-or-transport, repository: null, verification: unverified}
+  - {name: Loole, reported_version: "v1.1.1", category: client-or-transport, repository: null, verification: unverified}
+  - {name: ShiroKhorshid, reported_version: "v2026.05.24-a3b91cf", category: client-or-transport, repository: null, verification: unverified}
+  - {name: SlipNet, reported_version: "v2.5.5", category: tunnel-or-transport, repository: null, verification: unverified}
+  - {name: SniSpoofingRust, reported_version: "v1.0.2", category: dpi-or-tls-diagnostic, repository: null, verification: unverified}
+  - {name: spoofGUI, reported_version: "v1.0.5", category: dpi-or-tls-diagnostic, repository: null, verification: unverified}
+  - {name: MasterDns, reported_version: "v2026.06.13.234407-7de2476", category: dns, repository: null, verification: unverified}
+  - {name: nipoVpn, reported_version: "v1.1.59", category: vpn-client, repository: null, verification: unverified}
+  - {name: tunnelForge, reported_version: "v0.7.4", category: tunnel-or-transport, repository: null, verification: unverified}
+  - {name: inviZiblePro, reported_version: "v2.7.3-beta", category: privacy-or-network-tool, repository: https://github.com/invizible/invizible, verification: repository-candidate-unverified}
+  - {name: MahsaAlert, reported_version: "V11.2", category: monitor-or-alert-tool, repository: null, verification: unverified}
+  - {name: theFeed, reported_version: "v0.38.1-rc2", category: feed-or-network-tool, repository: null, verification: unverified}
+  - {name: MasterHttpRelayRust, reported_version: "v1.9.37", category: relay-or-transport, repository: null, verification: unverified}
+  - {name: Oblivion, reported_version: "v8", category: client-or-transport, repository: null, verification: unverified}
+  - {name: Begzar, reported_version: "v7.0.0", category: dns-or-access-tool, repository: null, verification: unverified}
+  - {name: Amnezia, reported_version: "5.0.3.0", category: vpn-client, repository: https://github.com/amnezia-vpn/amnezia-client, verification: repository-known-release-unverified}
+  - {name: networkChecker, reported_version: "1.7.1", category: network-diagnostic, repository: null, verification: unverified}
+  - {name: xrayKnife, reported_version: "v11.3.0", category: client-or-transport, repository: null, verification: unverified}
+  - {name: tunnelX, reported_version: "v2.2.2", category: tunnel-or-transport, repository: null, verification: unverified}
+  - {name: v2rayNG, reported_version: "2.3.10", category: proxy-client, repository: https://github.com/2dust/v2rayNG, verification: repository-known-release-unverified}
+  - {name: MahsaNG, reported_version: "v18-(1405-7-10)", category: proxy-client, repository: https://github.com/GFW-knocker/MahsaNG, verification: repository-known-release-unverified}
+  - {name: pyWarp, reported_version: "v1.3.6", category: warp-or-network-tool, repository: null, verification: unverified}
+  - {name: Hiddify, reported_version: "draft", category: proxy-client, repository: https://github.com/hiddify/hiddify-app, verification: repository-known-release-unverified}
+  - {name: DefyxVPN, reported_version: "v5.12.2", category: vpn-or-proxy-client, repository: https://github.com/UnboundTechCo/defyxVPN, verification: repository-known-release-unverified}
+  - {name: onionHop, reported_version: "v3.8.6", category: privacy-or-routing-tool, repository: null, verification: unverified}
+  - {name: senPaiScanner, reported_version: "v1.1.1", category: scanner-or-diagnostic, repository: https://github.com/MatinSenPai/SenPaiScanner, verification: repository-known-release-unverified}
+  - {name: v2rayN, reported_version: "7.25.5", category: proxy-client, repository: https://github.com/2dust/v2rayN, verification: repository-known-release-unverified}
+  - {name: Happ, reported_version: "4.7.1", category: proxy-client, repository: null, verification: unverified}
+  - {name: zedSecure, reported_version: "v3.1.5", category: proxy-client, repository: https://github.com/CluvexStudio/ZedSecure, verification: repository-known-release-unverified}
+  - {name: vayDnsClient, reported_version: "v3.0.0", category: dns-client, repository: null, verification: unverified}
+  - {name: whiteDNS, reported_version: "1.6.5", category: dns-or-access-tool, repository: null, verification: unverified}
+  - {name: Karing, reported_version: "v1.2.26.2907", category: proxy-client, repository: https://github.com/KaringX/karing, verification: repository-known-release-unverified}
+
+# Related projects mentioned in the user's examples but not present in the version roundup:
+related_unversioned:
+  - {name: Aether, category: tunnel-or-transport, repository: https://github.com/CluvexStudio/Aether, verification: repository-known-release-unverified}
+  - {name: PattN, category: dpi-or-transport-tool, repository: https://github.com/patterniha/PattN, verification: repository-known-release-unverified}
+  - {name: PattNG, category: dpi-or-transport-tool, repository: https://github.com/patterniha/PattNG, verification: repository-known-release-unverified}

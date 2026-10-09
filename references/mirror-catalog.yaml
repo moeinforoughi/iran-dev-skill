@@ -1,0 +1,218 @@
+# Seed catalogue. These are candidate services gathered from public/community lists,
+# not statements that a URL is alive, complete, official, or suitable today.
+# Prefer testing from the user's actual ISP/network and verify TLS + content integrity.
+# Update last_checked only after a real probe; never infer health from a homepage alone.
+version: 1
+last_reviewed: "2026-10-09"
+entries:
+  - id: shatel-linux
+    name: Shatel Mirror
+    landing_page: https://mirror.shatel.ir/
+    ecosystems: [ubuntu, debian, kali]
+    kind: linux-package-mirror
+    verification: unverified
+    last_checked: null
+    source: https://github.com/MiravaOrg/Mirava
+    notes: Candidate distribution repository mirror; use the official distro instructions to select the repository path.
+
+  - id: ito-repo-portal
+    name: ITO Open-Source Repository Portal
+    landing_page: https://repo-portal.ito.gov.ir/
+    ecosystems: [linux-distros, pypi, npm, yarn, gradle, maven, composer]
+    kind: multi-ecosystem-mirror-portal
+    verification: unverified
+    last_checked: null
+    source: https://github.com/MiravaOrg/Mirava
+    notes: Portal/guide URL only; do not invent package-index endpoints. Confirm documented endpoint per ecosystem.
+
+  - id: iut-repo
+    name: Isfahan University of Technology Repository
+    landing_page: https://repo.iut.ac.ir/
+    ecosystems: [debian, ubuntu, mint, arch, manjaro, alpine, rocky, fedora, opensuse, openbsd]
+    kind: linux-package-mirror
+    verification: unverified
+    last_checked: null
+    source: https://github.com/MiravaOrg/Mirava
+    notes: Verify OS release, architecture, and repository paths.
+
+  - id: runflare-mirrors
+    name: Runflare Mirrors
+    landing_page: https://runflare.com/mirrors
+    ecosystems: [npm, nodejs, pypi, composer]
+    kind: multi-ecosystem-mirror-portal
+    verification: unverified
+    last_checked: null
+    source: https://github.com/MiravaOrg/Mirava
+    notes: Landing page only; confirm current endpoints and terms in the vendor documentation.
+
+  - id: myket-maven
+    name: Myket Maven
+    landing_page: https://maven.myket.ir/
+    ecosystems: [maven-central, google-maven, jitpack, android-sdk]
+    kind: maven-mirror
+    verification: unverified
+    last_checked: null
+    source: user-provided community list
+    notes: Validate actual artifacts and checksums before relying on the mirror.
+
+  - id: arvan-linux
+    name: ArvanCloud Linux Repository Guide
+    landing_page: https://www.arvancloud.ir/dev/linux-repository
+    ecosystems: [debian, ubuntu, centos, alpine, arch, opensuse, manjaro]
+    kind: provider-documentation
+    verification: unverified
+    last_checked: null
+    source: user-provided community list
+    notes: Documentation link, not necessarily a direct repository base URL.
+
+  - id: arvan-docker
+    name: ArvanCloud Docker Registry Guide
+    landing_page: https://www.arvancloud.ir/fa/dev/docker
+    ecosystems: [docker]
+    kind: provider-documentation
+    verification: unverified
+    last_checked: null
+    source: user-provided community list
+    notes: Read current vendor docs; configure only the exact documented registry endpoint.
+
+  - id: iranserver-mirror
+    name: IranServer Mirror
+    landing_page: https://mirror.iranserver.com/
+    ecosystems: [debian, ubuntu, centos]
+    kind: linux-package-mirror
+    verification: unverified
+    last_checked: null
+    source: user-provided community list
+
+  - id: mobinhost-linux
+    name: MobinHost Mirror
+    landing_page: https://mirror.mobinhost.com/
+    ecosystems: [freebsd, almalinux, alpine, arch, debian, fedora, manjaro, mariadb, mongodb, raspbian, ubuntu, zabbix]
+    kind: linux-package-mirror
+    verification: unverified
+    last_checked: null
+    source: user-provided community list
+
+  - id: mobinhost-docker
+    name: MobinHost Docker Registry
+    landing_page: https://docker.mobinhost.com/
+    ecosystems: [docker]
+    kind: container-registry
+    verification: unverified
+    last_checked: null
+    source: user-provided community list
+
+  - id: arvan-lib
+    name: Arvan Library CDN
+    landing_page: https://lib.arvancloud.ir/
+    ecosystems: [libraries, frameworks]
+    kind: library-cdn
+    verification: unverified
+    last_checked: null
+    source: user-provided community list
+
+  - id: jamko-services
+    name: Jamko Development Mirrors
+    landing_page: https://jamko.ir/
+    ecosystems: [maven, gradle, android-sdk, apt, rpm, nuget, yarn, composer, pip]
+    kind: multi-ecosystem-mirror-portal
+    verification: unverified
+    last_checked: null
+    source: user-provided community list
+    notes: Confirm per-tool configuration and index endpoints before use.
+
+  - id: hamdocker
+    name: HamDocker Registry
+    landing_page: https://hub.hamdocker.ir/
+    ecosystems: [docker]
+    kind: container-registry
+    verification: unverified
+    last_checked: null
+    source: user-provided community list
+
+  - id: megan-services
+    name: Megan Services
+    landing_page: https://megan.ir/services
+    ecosystems: [developer-services, cloud, package-mirrors]
+    kind: service-catalog
+    verification: unverified
+    last_checked: null
+    source: user-provided community list
+
+  - id: chabokan-services
+    name: Chabokan Iran Services
+    landing_page: https://iran.chabokan.net/#services
+    ecosystems: [developer-services, package-mirrors]
+    kind: service-catalog
+    verification: unverified
+    last_checked: null
+    source: user-provided community list
+
+  - id: kernel-docker
+    name: Kernel.ir Docker Registry
+    landing_page: https://docker.kernel.ir/
+    ecosystems: [docker]
+    kind: container-registry
+    verification: unverified
+    last_checked: null
+    source: user-provided community list
+
+  - id: iranrepo-docker
+    name: IranRepo Docker Registry
+    landing_page: https://docker.iranrepo.ir/
+    ecosystems: [docker]
+    kind: container-registry
+    verification: unverified
+    last_checked: null
+    source: https://github.com/MiravaOrg/Mirava/blob/main/mirrors_list.yaml
+
+  - id: parspack-docker
+    name: ParsPack Docker Registry
+    landing_page: https://registry.docker.ir/
+    ecosystems: [docker]
+    kind: container-registry
+    verification: unverified
+    last_checked: null
+    source: https://github.com/MiravaOrg/Mirava/blob/main/mirrors_list.yaml
+
+  - id: runflare-docker
+    name: Runflare Docker Mirror
+    landing_page: https://mirror-docker.runflare.com/
+    ecosystems: [docker]
+    kind: container-registry
+    verification: unverified
+    last_checked: null
+    source: https://github.com/MiravaOrg/Mirava/blob/main/mirrors_list.yaml
+
+  - id: liara-linux-docker
+    name: Liara Linux/Docker Mirror
+    landing_page: https://linux-mirror.liara.ir/
+    ecosystems: [ubuntu, debian, alpine, docker]
+    kind: multi-ecosystem-mirror
+    verification: unverified
+    last_checked: null
+    source: https://github.com/MiravaOrg/Mirava/blob/main/mirrors_list.yaml
+
+  - id: arvan-consolidated-mirror
+    name: ArvanCloud Consolidated Mirror
+    landing_page: https://mirror.arvancloud.ir/
+    ecosystems: [ubuntu, debian, centos, arch, alpine, manjaro, opensuse, docker]
+    kind: multi-ecosystem-mirror
+    verification: unverified
+    last_checked: null
+    source: https://github.com/MiravaOrg/Mirava/blob/main/mirrors_list.yaml
+
+  - id: kubarcloud
+    name: KubarCloud Internal Mirror
+    landing_page: https://kubarcloud.com/
+    ecosystems: [linux-kernel, open-source-archives]
+    kind: source-mirror
+    verification: unverified
+    last_checked: null
+    source: https://github.com/MiravaOrg/Mirava
+
+# The following ecosystems still need verified, direct instructions/endpoints:
+# - Go modules, Rust crates.io/Cargo, NuGet, Composer/Packagist, npm, pip/PyPI
+# - Maven/Gradle/Android SDK and Flutter pub
+# - GitHub releases, Git LFS, GitLab, Hugging Face model files
+# - Docker/OCI images including multi-arch manifests and signature behavior

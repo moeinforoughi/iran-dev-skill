@@ -1,0 +1,147 @@
+# Host inventory for targeted diagnostics. This is NOT a live status list and does not
+# imply all paths are required, supported, or currently reachable from Iran.
+# Upstreams may change delivery/CDN hosts; follow each provider's current docs.
+version: 1
+last_reviewed: "2026-10-09"
+services:
+  - id: github-web
+    name: GitHub web
+    category: git-hosting
+    hosts: [github.com]
+    docs: https://docs.github.com/
+    status: https://www.githubstatus.com/
+  - id: github-api
+    name: GitHub REST/GraphQL API
+    category: git-hosting-api
+    hosts: [api.github.com]
+    docs: https://docs.github.com/en/rest
+    status: https://www.githubstatus.com/
+    notes: Inspect rate-limit headers; a 403 can be policy/rate-related and is not by itself proof of filtering.
+  - id: github-content-and-releases
+    name: GitHub raw content and release assets
+    category: artifact-downloads
+    hosts: [raw.githubusercontent.com, release-assets.githubusercontent.com, objects.githubusercontent.com]
+    docs: https://docs.github.com/
+    status: https://www.githubstatus.com/
+    notes: Actual release flows may redirect to changing asset hosts; inspect the real redirect chain.
+  - id: gitlab
+    name: GitLab SaaS
+    category: git-hosting
+    hosts: [gitlab.com, registry.gitlab.com]
+    docs: https://docs.gitlab.com/
+    status: https://status.gitlab.com/
+  - id: pypi
+    name: Python Package Index
+    category: package-registry
+    hosts: [pypi.org, files.pythonhosted.org]
+    docs: https://pip.pypa.io/en/stable/
+    status: https://status.python.org/
+  - id: npm
+    name: npm Registry
+    category: package-registry
+    hosts: [registry.npmjs.org]
+    docs: https://docs.npmjs.com/
+    status: https://status.npmjs.org/
+  - id: go-modules
+    name: Go module proxy/checksum database
+    category: package-registry
+    hosts: [proxy.golang.org, sum.golang.org]
+    docs: https://go.dev/ref/mod
+    status: null
+  - id: rust-crates
+    name: Rust crates.io
+    category: package-registry
+    hosts: [crates.io, index.crates.io, static.crates.io]
+    docs: https://doc.rust-lang.org/cargo/
+    status: null
+  - id: maven-central
+    name: Maven Central
+    category: package-registry
+    hosts: [repo.maven.apache.org]
+    docs: https://maven.apache.org/guides/
+    status: https://status.maven.org/
+  - id: google-maven-android
+    name: Google Maven and Android SDK downloads
+    category: package-registry
+    hosts: [maven.google.com, dl.google.com]
+    docs: https://developer.android.com/studio
+    status: null
+  - id: nuget
+    name: NuGet
+    category: package-registry
+    hosts: [api.nuget.org]
+    docs: https://learn.microsoft.com/en-us/nuget/
+    status: null
+  - id: flutter-dart
+    name: Dart and Flutter packages
+    category: package-registry
+    hosts: [pub.dev, storage.googleapis.com]
+    docs: https://dart.dev/tools/pub
+    status: null
+    notes: Validate the exact artifact URL; storage hosts may serve unrelated content too.
+  - id: docker-hub
+    name: Docker Hub Registry API
+    category: container-registry
+    hosts: [registry-1.docker.io, auth.docker.io]
+    docs: https://docs.docker.com/docker-hub/
+    status: https://www.dockerstatus.com/
+    notes: HTTP 401 from /v2/ can be the expected registry authentication challenge.
+  - id: github-container-registry
+    name: GitHub Container Registry
+    category: container-registry
+    hosts: [ghcr.io]
+    docs: https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry
+    status: https://www.githubstatus.com/
+  - id: quay
+    name: Quay Container Registry
+    category: container-registry
+    hosts: [quay.io]
+    docs: https://docs.quay.io/
+    status: https://status.redhat.com/
+  - id: microsoft-container-registry
+    name: Microsoft Container Registry
+    category: container-registry
+    hosts: [mcr.microsoft.com]
+    docs: https://learn.microsoft.com/en-us/azure/container-registry/
+    status: https://status.azure.com/
+  - id: hugging-face
+    name: Hugging Face Hub and model downloads
+    category: model-registry
+    hosts: [huggingface.co, cdn-lfs.huggingface.co]
+    docs: https://huggingface.co/docs
+    status: https://status.huggingface.co/
+    notes: File-download hosts/flows can evolve; inspect real redirects and model revision metadata.
+  - id: google-gemini
+    name: Google AI Studio and Gemini API
+    category: ai-api
+    hosts: [ai.google.dev, aistudio.google.com, generativelanguage.googleapis.com]
+    docs: https://ai.google.dev/gemini-api/docs/available-regions
+    status: null
+    notes: Reachability is separate from product/region/account eligibility; check current supported-region docs.
+  - id: openai-api
+    name: OpenAI API/platform
+    category: ai-api
+    hosts: [api.openai.com, platform.openai.com]
+    docs: https://platform.openai.com/docs
+    status: https://status.openai.com/
+    notes: Do not infer API availability from ChatGPT web availability or vice versa.
+  - id: anthropic-api
+    name: Anthropic API/Console
+    category: ai-api
+    hosts: [api.anthropic.com, console.anthropic.com]
+    docs: https://docs.anthropic.com/
+    status: https://status.anthropic.com/
+  - id: deepseek-api
+    name: DeepSeek API/chat
+    category: ai-service
+    hosts: [api.deepseek.com, chat.deepseek.com]
+    docs: https://api-docs.deepseek.com/
+    status: null
+    notes: Use official documentation/status information available at diagnosis time.
+  - id: cloudflare-radar
+    name: Cloudflare Radar network telemetry
+    category: network-measurement
+    hosts: [radar.cloudflare.com]
+    docs: https://radar.cloudflare.com/ir
+    status: null
+    notes: Observed Cloudflare traffic is one measurement vantage point, not a full census of all Iranian networks.
