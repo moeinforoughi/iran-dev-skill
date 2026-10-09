@@ -17,3 +17,8 @@ Append one concise entry for every maintenance task. Record facts and tests, not
 - **Efficiency policy:** normal diagnosis reads at most 2 references and probes at most 3 distinct external target hosts; broad seven-target baseline requires `--profile all`.
 - **Validation results:** `bash scripts/validate-project.sh` passed; shell syntax, CLI help/guardrails, Markdown local links, SKILL frontmatter and YAML syntax (4 files) passed. In an isolated temporary Git repository, `check-governance-update.sh` rejected a change without a work-log update and accepted it after the log was added. Both full-project and standalone governance ZIPs passed `unzip -t`. No live network probes were run for this documentation/script-structure task.
 - **Not verified:** current real-world reachability of listed mirrors, tunnels, VPN clients, bot operators, AI provider eligibility and ISP-specific filtering status.
+
+### CI portability fix — 2026-10-09
+- Fixed `scripts/validate-project.sh` to invoke helper scripts through `bash`, avoiding dependence on executable mode bits when an archive or checkout does not preserve them.
+- Marked project shell scripts executable as well, so direct invocation works in normal Git checkouts and on Unix-like systems.
+- Validation: reran the offline project validation after the fix; results are recorded with the release artifact.

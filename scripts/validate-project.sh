@@ -25,20 +25,20 @@ done
 bash -n scripts/quick-diagnose.sh scripts/validate-project.sh scripts/check-governance-update.sh
 printf 'PASS\tbash syntax: project scripts\n'
 
-help_output=$(scripts/quick-diagnose.sh --help)
+help_output=$(bash scripts/quick-diagnose.sh --help)
 printf '%s' "$help_output" | grep -q -- '--profile github|python|node|docker|ai|baseline' || {
   printf 'FAIL\tdiagnostic usage output\n'; exit 1;
 }
 printf 'PASS\tdiagnostic --help\n'
 
 set +e
-scripts/quick-diagnose.sh >/dev/null 2>&1
+bash scripts/quick-diagnose.sh >/dev/null 2>&1
 no_args_rc=$?
-scripts/quick-diagnose.sh --profile nope >/dev/null 2>&1
+bash scripts/quick-diagnose.sh --profile nope >/dev/null 2>&1
 bad_profile_rc=$?
-scripts/quick-diagnose.sh --url http://example.org >/dev/null 2>&1
+bash scripts/quick-diagnose.sh --url http://example.org >/dev/null 2>&1
 http_url_rc=$?
-scripts/quick-diagnose.sh --url https://a.example --url https://b.example --url https://c.example --url https://d.example >/dev/null 2>&1
+bash scripts/quick-diagnose.sh --url https://a.example --url https://b.example --url https://c.example --url https://d.example >/dev/null 2>&1
 four_urls_rc=$?
 set -e
 [ "$no_args_rc" -eq 2 ] || { printf 'FAIL\tno-arg invocation should refuse broad/implicit probing\n'; exit 1; }
@@ -48,7 +48,7 @@ set -e
 printf 'PASS\tdiagnostic guardrails (no implicit scan, profile validation, HTTPS-only, max 3 custom URLs)\n'
 
 set +e
-scripts/check-governance-update.sh >/dev/null 2>&1
+bash scripts/check-governance-update.sh >/dev/null 2>&1
 guard_usage_rc=$?
 set -e
 [ "$guard_usage_rc" -eq 2 ] || { printf 'FAIL\twork-log gate argument validation\n'; exit 1; }
